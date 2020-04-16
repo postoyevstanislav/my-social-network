@@ -2,9 +2,7 @@
     grid-area: c;
     background-color: #fda000;
 }
-.item {
-    color:green;
-}
-.posts{
-
+.content img {
+    width: 100%;
+    height: auto;
 }
