@@ -24,9 +24,10 @@ function App(props) {
                     <Route path='/music' component={Music}/>
                     <Route path='/settings' component={Settings}/>
 
-                    <Route path='/dialogs' render={() => <Dialogs  messages={props.messages}
-                    dialogs={props.dialogs}/>}/>
-                    <Route path='/profile' render={() => <Profile posts={props.posts} />}/>
+                    <Route path='/dialogs' render={() => <Dialogs
+                        state={props.appState.dialogsPage}/>}/>
+                    <Route path='/profile' render={() => <Profile
+                        state={props.appState.profilePage} />}/>
 
                 </div>
 
