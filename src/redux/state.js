@@ -45,6 +45,7 @@ export const addPost = () => {
     state.profilePage.posts.push(newPost)
     state.profilePage.newPostText = ''
     rerenderEntireTree(state)
+
 }
 
 export const updateNewPostText = (newText) => {
